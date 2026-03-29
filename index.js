@@ -3,8 +3,7 @@ const fs = require("fs");
 const csv = require("csv-parser");
 const path = require("path");
 
-require('dotenv').config(); // Nạp biến môi trường từ file .env
-const { EventHubProducerClient } = require("@azure/event-hubs");
+require("dotenv").config(); // Nạp biến môi trường từ file .env
 // ... các thư viện khác giữ nguyên
 
 // Gọi biến từ .env thay vì viết trực tiếp
