@@ -3,10 +3,9 @@ const fs = require("fs");
 const csv = require("csv-parser");
 const path = require("path");
 
-require("dotenv").config(); // Nạp biến môi trường từ file .env
-// ... các thư viện khác giữ nguyên
+require("dotenv").config(); 
 
-// Gọi biến từ .env thay vì viết trực tiếp
+
 const connectionString = process.env.AZURE_CONNECTION_STRING;
 const eventHubName = "event-hub";
 const filePath = path.join(__dirname, "src", "Final_Iowa_Liquor_Sales2022.csv");
